@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="script.js" async></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,14 +13,61 @@
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Portifolio</a></li>
-                <li><a href="">About</a></li>
                 <li><a href="">Resume</a></li>
+                <li><a href="">About</a></li>
         </ul>
         </header>
         <div id="mainImg">
-            <img src="jakob-owens-DQPP9rVLYGQ-unsplash.jpg" alt="" id="personalImg">
+            <img src="/assets/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" alt="" id="personalImg">
         </div>
-        <div class="text2"><span id="presentationText">Hello, I'm <br><span class="boldText">João Vitor</span></span></div>
+        <div class="text2"><span id="presentationText"><span id="notBoldText">Hello, I'm</span> <br><span class="boldText">João Vitor</span></span></div>
+        
+        <section class="sectionBasics">
+            <div id="portifolioTitle">Portifolio</div>
+            
+            <div id="portifolioCards">
+                <div class="portifolioCard">
+                    <img src="/assets/IndaiaSpots.png" alt="" class="mainImg">
+                    <span class="projectName">IndaiaSpots</span>
+                    <blockquote class="description">Website which shows restaurants, events and of other types of establishments in the city of Indaiatuba, the most important feature is the ability to filter which kind of restaurant, event you want to search, you can also get the ones that are near you, or the best of the week...</blockquote>
+                    <div class="technologies">
+                            <div>
+                                <img src="/assets/html-5.png" alt="">
+                                <img src="/assets/js.png" alt="">
+                                <img src="/assets/css-3.png" alt="">
+                            </div>
+
+                        <div class="moreBtn"><button id="moreAboutBtn">More about   ></button></div>
+                    </div>
+                </div>
+                
+                <div class="portifolioCard">
+                    <img src="/assets/sortingSite.png" alt="" class="mainImg">
+                    <span class="projectName">AlgorithmVIS</span>
+                    
+                    <blockquote class="description">Website to visualize the process of sorting algorithms, it uses chartJS for the charts, you can alter how many will be in the array to sort,select which sorting algorithm you want etc.. It was my first attempt to create a dark and light theme, and a search algorithm page is in development.</blockquote>
+
+                    <div class="technologies">
+                        <div>
+                            <img src="/assets/html-5.png" alt="">
+                            <img src="/assets/js.png" alt="">
+                            <img src="/assets/chartJs.png" alt="">
+                            <img src="/assets/css-3.png" alt="">
+                            
+                        </div>
+                    <div class="moreBtn"><button id="moreAboutBtn">More about   ></button></div>
+                    
+                </div>
+
+                </div>
+                <div class="portifolioCard"></div>
+            </div>
+            
+        </section>
+
+        <section class="sectionBasics">
+            <div id="resumeTitle">Resume</div>
+        </section>
         
 </main>
 </body>
