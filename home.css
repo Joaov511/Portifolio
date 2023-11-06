@@ -5,6 +5,8 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,12 +14,13 @@ header {
     height: 800px;
     background: rgba(43, 41, 41, 0.7);
     align-content: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    
 }
 
 body {
-    background-color: rgb(26, 25, 25);
+    background-color: #090d10;
 }
 
 header ul {
@@ -35,6 +38,7 @@ header ul li a {
     text-decoration: none;
     color: white;
     transition: 0.6s;
+    scroll-behavior: smooth;
 }
 
 header ul li a:hover {
@@ -44,6 +48,8 @@ header ul li a:hover {
 
 #mainImg {
     width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #mainImg img {
@@ -103,6 +109,24 @@ header ul li a:hover {
     margin-bottom: 20rem;
     border-radius: 15px;
     font-family: 'Inter', sans-serif;
+}
+#portifolioSvg {
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 65rem;
+    width: 2000px;
+    height: 1150px;
+}
+#portifolioSvg2 {
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: rem;
+    width: 2000px;
+    height: 1000px;
 }
 
 .portifolioCard:hover {
@@ -177,5 +201,35 @@ header ul li a:hover {
 
 .hideCard {
     display: none;
+}
+
+
+@media screen and (max-width : 600px) {
+    header {
+        font-size: 1.1rem;
+    }
+    header ul li {
+        padding-right: 2rem;
+    }
+    #presentationText {
+        top: 7em;
+        left: 3em;
+    }
+    #portifolioCards {
+        flex-direction: column;
+    }
+    .portifolioCard	{
+        width: 75%;
+    }
+    .technologies {
+        padding-top: 1.5rem;
+    }
+    .technologies img {
+        width: 18px;
+    }
+    .moreBtn button {
+        width: 10em;
+        font-size: 0.7rem;
+    }
 }
 
