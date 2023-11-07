@@ -104,12 +104,20 @@ header ul li a:hover {
     font-size: 1.8rem;
     transition: 0.8s;
     margin-right: 2.5rem;
-    height: 650px;
+    height: 700px;
     background-color: rgb(20, 20, 20);
     margin-bottom: 20rem;
     border-radius: 15px;
     font-family: 'Inter', sans-serif;
 }
+
+.portifolioCard .mainImg {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 #portifolioSvg {
     z-index: -1;
     position: absolute;
@@ -119,6 +127,7 @@ header ul li a:hover {
     width: 2000px;
     height: 1150px;
 }
+
 #portifolioSvg2 {
     z-index: -1;
     position: absolute;
@@ -135,25 +144,25 @@ header ul li a:hover {
 }
 
 .projectName {
-    font-weight:lighter;
+    font-weight:lighter;   
+}
+
+.githubRepository {
+    display: flex;
+}
+
+.githubIcon{
+    width: 48px;
+    margin-left: 2rem;
+    cursor: pointer;
 }
 
 .description {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding: 0 1rem 0 1rem;
     font-size: 0.9rem;
     color: white;
     
-}
-
-.portifolioCard .mainImg {
-    height: 60%;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.portifolioCard img {
-    width: 100%;
 }
 
 .technologies {
@@ -175,7 +184,7 @@ header ul li a:hover {
 }
 
 .moreBtn button {
-    width: 8em;
+    width: 6em;
     height: 32px;
     font-weight: 200;
     font-size: 1.1rem;
@@ -188,8 +197,6 @@ header ul li a:hover {
     transition: 0.2s;
     font-weight: 500;
 }
-
-
 
 .moreBtn button:hover {
     background-color: rgb(4, 68, 189);
@@ -204,7 +211,7 @@ header ul li a:hover {
 }
 
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 900px) {
     header {
         font-size: 1.1rem;
     }

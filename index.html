@@ -10,16 +10,19 @@
 <body>
     <main>
         <header>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#portifolioTitle">Portifolio</a></li>
-                <li><a href="">Resume</a></li>
-                <li><a href="">About</a></li>
-        </ul>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#portifolioTitle">Portifolio</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
         </header>
-        <div id="mainImg">
-            <img src="/assets/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" alt="" id="personalImg">
-        </div>
+
+        <figure id="mainImg">
+            <img src="/assets/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" id="personalImg">
+        </figure>
         <div class="text2"><span id="presentationText"><span id="notBoldText">Hello, I'm</span> <br><span class="boldText">João Vitor</span></span></div>
         
         <section class="sectionBasics">
@@ -30,6 +33,8 @@
                 <div class="portifolioCard">
                     <img src="/assets/IndaiaSpots.png" alt="" class="mainImg">
                     <span class="projectName">IndaiaSpots</span>
+                    <figure class="githubRepository"><img src="assets/icons8-github.svg" alt="" class="githubIcon"></figure>
+                    
                     <blockquote class="description">Website which shows restaurants, events and of other types of establishments in the city of Indaiatuba, the most important feature is the ability to filter which kind of restaurant, event you want to search, you can also get the ones that are near you, or the best of the week...</blockquote>
                     <div class="technologies">
                             <div>
@@ -38,14 +43,15 @@
                                 <img src="/assets/css-3.png" alt="">
                             </div>
 
-                        <div class="moreBtn"><button id="moreAboutBtn">More about   ></button></div>
+                        <div class="moreBtn"><button class="portifolioSiteBtn">Access</button></div>
                     </div>
                 </div>
                 
                 <div class="portifolioCard">
                     <img src="/assets/sortingSite.png" alt="" class="mainImg">
                     <span class="projectName">AlgorithmVIS</span>
-                    
+                    <figure class="githubRepository"><img src="assets/icons8-github.svg" alt="" class="githubIcon"></figure>
+
                     <blockquote class="description">Website to visualize the process of sorting algorithms, it uses chartJS for the charts, you can alter how many will be in the array to sort,select which sorting algorithm you want etc.. It was my first attempt to create a dark and light theme, and a search algorithm page is in development.</blockquote>
 
                     <div class="technologies">
@@ -56,7 +62,7 @@
                             <img src="/assets/css-3.png" alt="">
                             
                         </div>
-                    <div class="moreBtn"><button id="moreAboutBtn">More about   ></button></div>
+                    <div class="moreBtn"><button class="portifolioSiteBtn">Access</button></div>
                     
                 </div>
 
