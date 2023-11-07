@@ -26,11 +26,13 @@ body {
 header ul {
     text-align: center;
     padding: 1rem 0 0 0;
+
 }
 
 header ul li {
     color: white;
     display: inline-block;
+    justify-content: center;
     padding-right: 3rem;
 }
 
@@ -61,17 +63,22 @@ header ul li a:hover {
     filter: grayscale(1);
 }
 
+.text2 {
+    justify-content: center;
+    display: flex;
+}
+
 #presentationText {
     color: white;
     position: absolute;
     top: 23rem;
-    left: 50rem;
+    left: 45rem;
     font-size: 2.4rem;
     font-family: 'Barlow', sans-serif;
 }
 
 #presentationText #notBoldText {
-    margin-left: 3rem;
+    
 }
 
 .boldText {
@@ -224,9 +231,15 @@ header ul li a:hover {
     }
     #portifolioCards {
         flex-direction: column;
+        justify-content: center;
     }
     .portifolioCard	{
-        width: 75%;
+        width: 85%;
+        margin-right: 0rem;
+        height: 750px;
+    }
+    #portifolioSvg {
+        width: 100%;
     }
     .technologies {
         padding-top: 1.5rem;
