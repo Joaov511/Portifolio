@@ -26,14 +26,17 @@ body {
 header ul {
     text-align: center;
     padding: 1rem 0 0 0;
-
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header ul li {
     color: white;
-    display: inline-block;
-    justify-content: center;
     padding-right: 3rem;
+    
 }
 
 header ul li a {
@@ -47,6 +50,26 @@ header ul li a:hover {
     text-decoration: underline;
     font-size: 1.8rem;
 }
+
+#personalSites {
+    position: absolute;
+    right: 0%;
+    transition: 0.6s;
+    padding-left: 1rem;
+}
+
+#personalSites img{
+    margin-right: 1rem;
+    
+    padding-top: 0.5rem;
+    width: 48px;
+    cursor: pointer;
+}
+
+#personalSites img:hover {
+    transform: scale(1.1);
+}
+
 
 #mainImg {
     width: 100%;
