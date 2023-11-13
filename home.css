@@ -60,7 +60,6 @@ header ul li a:hover {
 
 #personalSites img{
     margin-right: 1rem;
-    
     padding-top: 0.5rem;
     width: 48px;
     cursor: pointer;
@@ -165,6 +164,7 @@ header ul li a:hover {
     margin-bottom: 20rem;
     border-radius: 15px;
     font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
 }
 
 .portifolioCard .mainImg {
@@ -258,13 +258,20 @@ header ul li a:hover {
     background-color: rgb(4, 68, 189);
 }
 
-.moreBtnClick {
-    width: 1500px;
+#arrowToTop {
+    display: none;
+    right: 0;
+    position: fixed;
+    top: 90%;
+    transition: 0.8s;
 }
 
-.hideCard {
-    display: none;
+#arrowToTop img {
+    width: 96px;
+    cursor: pointer;
 }
+
+
 
 
 @media screen and (max-width : 900px) {
@@ -273,6 +280,9 @@ header ul li a:hover {
     }
     header ul li {
         padding-right: 2rem;
+    }
+    #personalSites {
+        display: none;
     }
     #presentationText {
         top: 7em;
@@ -285,7 +295,7 @@ header ul li a:hover {
     .portifolioCard	{
         width: 85%;
         margin-right: 0rem;
-        height: 750px;
+        height: 780px;
     }
     #portifolioSvg {
         width: 100%;
