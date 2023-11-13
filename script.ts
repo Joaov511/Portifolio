@@ -19,3 +19,4 @@ document.addEventListener('scroll', function() {
         arrowToTop.style.display = 'none';
     }
 })
+
