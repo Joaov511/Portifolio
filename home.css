@@ -263,11 +263,11 @@ header ul li a:hover {
     right: 0;
     position: fixed;
     top: 90%;
-    transition: 0.8s;
 }
 
 #arrowToTop img {
-    width: 96px;
+    width: 72px;
+    padding: 0;
     cursor: pointer;
 }
 
